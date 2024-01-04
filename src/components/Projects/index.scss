@@ -1,0 +1,27 @@
+.project-cont {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 0;
+    margin-left: 0;
+    position: absolute;
+    right: 200px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 20px;
+}
+
+.project-cont div {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+.project-cont div a img {
+    height: 200px;
+    width: 400px;
+}
+

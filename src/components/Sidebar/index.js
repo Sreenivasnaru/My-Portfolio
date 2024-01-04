@@ -3,7 +3,7 @@ import './index.scss';
 import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faUser, faFileLines } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
@@ -19,25 +19,27 @@ const Sidebar = () => (
             <NavLink exact='true' activeclassname='active' className="about-link" to='/about'>
                 <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
             </NavLink>
+            <NavLink exact='true' activeclassname='active' className="projects-link" to='/Projects'>
+            <FontAwesomeIcon icon={faFileLines} color='#4d4d4e'/>
+            </NavLink>
             <NavLink exact='true' activeclassname='active' className="contact-link" to='/contact'>
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
             </NavLink>
-
         </nav>
         <ul>
             <li>
-                <a target='_blank' rel='noreferrer' href='/'>
-                    <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
-                </a>
-            </li>
-            <li>
-                <a target='_blank' rel='noreferrer' href='/'>
+                <a target='_blank' rel='noreferrer' href='https://github.com/Sreenivasnaru'>
                     <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='/'>
+                <a target='_blank' rel='noreferrer' href='https://twitter.com/NaruSreenivas'>
                     <FontAwesomeIcon icon={faTwitter} color='#4d4d4e' />
+                </a>
+            </li>
+            <li>
+                <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/sreenivas-naru-9b8268255/'>
+                    <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                 </a>
             </li>
         </ul>
