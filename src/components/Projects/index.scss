@@ -1,27 +1,109 @@
+// .project-cont {
+//     width: 70%;
+//     height: 100%;
+//     top: 0;
+//     padding-top: 0;
+//     margin-left: 0;
+//     position: absolute;
+//     right: 100px;
+//     overflow: hidden;
+// }
+
+// .project-cont div {
+//     width: 100%;
+//     height: 80%;
+//     background-color: #fff;
+// }
+
+// .project-cont div a img {
+//     height: 100px;
+//     width: 200px;
+// }
+
 .project-cont {
-    width: 50%;
+    width: 70%;
     height: 100%;
-    top: 0;
-    padding-top: 0;
-    margin-left: 0;
     position: absolute;
-    right: 200px;
+    right: 100px;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 20px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #034569;
+    display: block;
+
+  }
+  
+  .project-cont div {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .project-cont div a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .project-cont div a img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+  }
+  
+  .project-cont div a:hover img {
+    transform: scale(1.2);
+  }
+
+  .project-cont div a h2 {
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+  }
+  
+  .project-cont button {
+    position: absolute;
+    transform: translateY(-30%);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  
+.Prev {
+    top: 88%;
+    left: 25%;
+  }
+
+.Next {
+    top: 88%;
+    right: 25%;
 }
 
-.project-cont div {
+.flat-button {
+    background: #034569;
+    color: #ffd700;
     font-size: 15px;
-    color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 300;
-    background-color: #fff;
-}
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
 
-.project-cont div a img {
-    height: 200px;
-    width: 400px;
+    &:hover {
+        background: #ffd700;
+        color: #333;
+    }
+
 }
+  
+
 
