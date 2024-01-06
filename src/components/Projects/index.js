@@ -20,7 +20,7 @@ const Projects = () => {
 
   // Array of project images
   const projectImages = [Portfolio, WanderLust, Nike, SimonSays];
-  const ProjectLinks = ["http://google.com","https://project-u24q.onrender.com","https://github.com/Sreenivasnaru/Sneakers-app", "https://github.com/Sreenivasnaru/Simon-Says-Game"]
+  const ProjectLinks = ["https://sreenivas-portfolio.netlify.app","https://project-u24q.onrender.com","https://github.com/Sreenivasnaru/Sneakers-app", "https://github.com/Sreenivasnaru/Simon-Says-Game"]
   const ProjectNames = ["My Portfolio", "WanderLust App", "Nike React app", "Simon Says game"]
   // Function to handle next project
   const nextProject = () => {
